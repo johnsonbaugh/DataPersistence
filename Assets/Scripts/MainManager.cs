@@ -57,7 +57,8 @@ public class MainManager : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                GameManager.Instance.SubmitScore(m_Points);
+                SceneManager.LoadScene(0);
             }
         }
     }
